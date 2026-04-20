@@ -800,3 +800,14 @@ html {
     color: var(--teal-main);
     transform: scale(1.2);
 }
+
+/* ULTIMO BOTON */
+.btn-primary {
+    background: var(--teal-main);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
