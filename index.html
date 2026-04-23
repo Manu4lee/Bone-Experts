@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bone Experts | ISC0501</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+    <img src="img/LOGO Scope.png" alt="minilogo" class="logo-img">
+    <span>BONE EXPERTS</span>
+    </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#doctores">Expertos</a></li>
+            <li><a href="#sedes">Sedes</a></li>
+            <li><a href="#expediente-citas" class="btn-cita">Agendar Cita</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="img/Logo PNG.png" alt="Logo Bone Experts" class="hero-logo">
+            <h1>Si moverte duele, es momento de atenderlo con los mejores</h1>
+            <a href="#especialidades" class="btn-primary">Ver Especialidades</a>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="card-xray"><img src="img/craneo.jpeg" alt="Rayos X"></div>
+                <div class="card-xray"><img src="img/coxis.jpg" alt="Rayos X"></div>
+                <div class="card-xray"><img src="img/mano.jpg" alt="Rayos X"></div>
+                <div class="card-xray"><img src="img/columna.jpg" alt="Rayos X"></div>
+                <div class="card-xray"><img src="img/hombro.jpg" alt="Rayos X"></div>
+                <div class="card-xray"><img src="img/brazo.jpg" alt="Rayos X"></div>
+                <div class="card-xray"><img src="img/cuello.jpg" alt="Rayos X"></div>
+                <div class="card-xray"><img src="img/pie.jpg" alt="Rayos X"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="cards-grid flip-cards">
+
+    <!-- MISIÓN -->
+    <div class="flip-card">
+        <div class="flip-inner">
+
+            <!-- FRENTE -->
+            <div class="flip-front">
+                <img src="img/mision.jpg" alt="Misión">
+                <h3>Misión</h3>
+            </div>
+
+            <!-- ATRÁS -->
+            <div class="flip-back">
+                <h3>Misión</h3>
+                <p>Brindar atención médica de vanguardia con un enfoque humano y preciso.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- VISIÓN -->
+    <div class="flip-card">
+        <div class="flip-inner">
+
+            <div class="flip-front">
+                <img src="img/vision.jpeg" alt="Visión">
+                <h3>Visión</h3>
+            </div>
+
+            <div class="flip-back">
+                <h3>Visión</h3>
+                <p>Ser el referente nacional en tratamientos de alta especialidad robótica.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TECNOLOGÍA -->
+    <div class="flip-card">
+        <div class="flip-inner">
+
+            <div class="flip-front">
+                <img src="img/tecnologia.jpg" alt="Tecnología">
+                <h3>Tecnología</h3>
+            </div>
+
+            <div class="flip-back">
+                <h3>Tecnología</h3>
+                <p>Uso de precisión robótica MAKO para acelerar tu recuperación.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="especialidades" class="specialties">
+
+    <h2>Especialidad</h2>
+
+    <div class="specialties-container">
+
+    <!-- IZQUIERDA -->
+    <div class="spec-list">
+        <div class="spec-card active" onclick="showSpec('corazon', event)">Cardiología</div>
+        <div class="spec-card" onclick="showSpec('pulmon', event)">Neumología</div>
+        <div class="spec-card" onclick="showSpec('hueso', event)">Traumatología</div>
+        <div class="spec-card" onclick="showSpec('cerebro', event)">Neurología</div>
+    </div>
+
+    <!-- DERECHA (CONTENEDOR CORRECTO) -->
+    <div class="spec-display">
+
+        <div class="spec-content active" id="corazon">
+            <img src="img/cardio.png">
+            <h3>Cardiología</h3>
+            <p>Diagnóstico y tratamiento de enfermedades del corazón, incluyendo hipertensión, arritmias y cardiopatías.</p>
+        </div>
+
+        <div class="spec-content" id="pulmon">
+            <img src="img/pulmon.png">
+            <h3>Neumología</h3>
+            <p>Especialidad enfocada en enfermedades respiratorias como asma, EPOC e infecciones pulmonares.</p>
+        </div>
+
+        <div class="spec-content" id="hueso">
+            <img src="img/huesos.png">
+            <h3>Traumatología</h3>
+            <p>Tratamiento de lesiones óseas, fracturas, articulaciones y cirugía ortopédica avanzada.</p>
+        </div>
+
+        <div class="spec-content" id="cerebro">
+            <img src="img/cerebro.png">
+            <h3>Neurología</h3>
+            <p>Atención a trastornos del sistema nervioso como migrañas, epilepsia y enfermedades neurodegenerativas.</p>
+        </div>
+
+    </div>
+
+</div>
+</section>
+    <section id="doctores" class="doctors-section"> 
+    <h2>Nuestros Especialistas</h2>
+
+    <div class="doctors-grid">
+
+        <!-- DOCTOR 1 -->
+        <div class="doctor-card">
+            <div class="doc-img">
+                <img src="img/doctor11.jpg" alt="Doctora">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Mario Fernando</h3>
+                <p class="specialty-tag">Ortopedia Pediátrica</p>
+                <div class="doc-cv">
+                    <p>Egresado de la UNAM con especialidad en Ortopedia Avanzada.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DOCTOR 2 -->
+        <div class="doctor-card">
+            <div class="doc-img">
+                <img src="img/doctor22.jpg" alt="Doctor">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Juan Pérez</h3>
+                <p class="specialty-tag">Columna</p>
+                <div class="doc-cv">
+                    <p>Especialista en cirugía de columna mínimamente invasiva.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DOCTOR 3 -->
+        <div class="doctor-card">
+            <div class="doc-img">
+                <img src="img/doctor33.jpg" alt="Doctor">
+            </div>
+            <div class="doc-info">
+                <h3>Dra. Laura Gómez</h3>
+                <p class="specialty-tag">Neurología</p>
+                <div class="doc-cv">
+                    <p>Experta en trastornos neurológicos y rehabilitación.</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- DOCTOR 4 -->
+        <div class="doctor-card">
+            <div class="doc-img">
+                <img src="img/doctor44.jpg" alt="Doctor">
+            </div>
+            <div class="doc-info">
+                <h3>Dra. Patricia Sanchez</h3>
+                <p class="specialty-tag">Reemplazos Articulares</p>
+                <div class="doc-cv">
+                    <p>Especialista en prótesis de cadera y rodilla con enfoque en recuperación acelerada.</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- DOCTOR 5 -->
+        <div class="doctor-card">
+            <div class="doc-img">
+                <img src="img/doctor55.jpg" alt="Doctor">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Carlos Dorantes</h3>
+                <p class="specialty-tag">Traumatología de Urgencias</p>
+                <div class="doc-cv">
+                    <p>Experto en el manejo de fracturas múltiples y reconstrucción de extremidades.</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- DOCTOR 6 -->
+        <div class="doctor-card">
+            <div class="doc-img">
+                <img src="img/doctor66.jpg" alt="Doctor">
+            </div>
+            <div class="doc-info">
+                <h3>Dra. Cecilia Estrada</h3>
+                <p class="specialty-tag">Ortopedia de Mano y Muñeca</p>
+                <div class="doc-cv">
+                    <p>Especialista en microcirugía nerviosa y túnel carpiano.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+  <section id="expediente-citas" class="medical-section">
+    <div class="medical-card">
+
+        <h2>Expediente Clínico y Cita</h2>
+        <p class="subtitle">Centraliza la información del paciente y agenda en un solo paso</p>
+
+        <form id="form-medico">
+
+            <div class="grid-2">
+                <input type="text" id="nombre" placeholder="Nombre(s)" required>
+                <input type="text" id="apellidos" placeholder="Apellidos" required>
+            </div>
+
+            <div class="grid-2">
+                <input type="number" id="edad" placeholder="Edad" required>
+                <input type="date" id="fechaNacimiento" required>
+            </div>
+
+            <div class="grid-2">
+                <select id="genero" required>
+                    <option value="">Género</option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Otro</option>
+                </select>
+
+                <input type="text" id="estadoCivil" placeholder="Estado civil" required>
+            </div>
+
+            <div class="grid-2">
+                <input type="text" id="ocupacion" placeholder="Ocupación actual" required>
+                <input type="tel" id="telefono" placeholder="Teléfono" required>
+            </div>
+
+            <input type="text" id="direccion" placeholder="Dirección completa" required>
+
+            <input type="tel" id="contactoEmergencia" placeholder="Contacto de emergencia (teléfono)" required>
+
+            <textarea id="antecedentes" placeholder="Antecedentes médicos (personales o familiares)" required></textarea>
+
+            <div class="grid-2">
+                <select id="especialidad" required>
+                    <option value="">Selecciona especialidad</option>
+                    <option>Cardiología</option>
+                    <option>Neumología</option>
+                    <option>Traumatología</option>
+                    <option>Neurología</option>
+                </select>
+
+                <input type="datetime-local" id="fechaCita" required>
+            </div>
+
+            <div class="btn-center">
+                <button type="submit" class="btn-cta">Guardar Expediente y Agendar</button>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+<footer id="sedes" class="main-footer">
+    <div class="sedes-grid">
+
+        <a href="https://www.google.com/maps?q=Lago+Victoria+52+Polanco+CDMX" target="_blank" class="sede-item">
+    <img src="img/hosp1.jpg" alt="hops1">
+    <h3>CDMX - Polanco</h3>
+    <p>Lago Victoria 52</p>
+</a>
+
+      <a href="https://www.google.com/maps?q=Blvd+Miguel+Alemán+Toluca+Lerma" target="_blank" class="sede-item">
+    <img src="img/hops2.jpg" alt="hops2">
+    <h3>Toluca - Lerma</h3>
+    <p>Blvd. Miguel Alemán</p>
+</a>
+
+<a href="https://www.google.com/maps?q=Hospital+Angeles+Lomas+Interlomas" target="_blank" class="sede-item">
+    <img src="img/hops3.jpeg" alt="hops3">
+    <h3>CDMX - Interlomas</h3>
+    <p>Hosp. Ángeles Lomas</p>
+</a>
+
+<a href="https://www.google.com/maps?q=Angelopolis+Puebla+Torre+Medica+2" target="_blank" class="sede-item">
+    <img src="img/hops4.jpg" alt="hops4">
+    <h3>Puebla - Angelópolis</h3>
+    <p>Torre Médica 2</p>
+</a>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-logo">BONE EXPERTS</div>
+
+        <div class="socials">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-tiktok"></i>
+        </div>
+
+        <p class="footer-contact">
+    +52 55 5160 4280 | contacto@bonexperts.mx
+    <span class="mini-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+        <i class="fas fa-envelope"></i>
+    </span>
+</p>
+    </div>
+</footer>
+
+    <script src="app.js"></script>
+  
+<!-- MODAL PERFIL DOCTOR -->
+<div id="doctorModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modalNombre"></h2>
+        <p id="modalEspecialidad"></p>
+        <p id="modalDescripcion"></p>
+    </div>
+</div>
+
+<!-- BOTÓN WHATSAPP -->
+<a href="https://wa.me/525551604280" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
